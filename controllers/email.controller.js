@@ -20,7 +20,7 @@ const sendEmail = async (req, res) => {
         name: `${fullName} - ${email}`,
         address: process.env.USER,
       },
-      to: process.env.USER,
+      to: "ajlimramirez@gmail.com",
       subject: "Job Opportunity??",
       text: message,
     });
