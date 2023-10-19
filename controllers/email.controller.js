@@ -31,4 +31,8 @@ const sendEmail = async (req, res) => {
   }
 };
 
-module.exports = { sendEmail };
+const fakeRequest = async (req, res) => {
+  res.status(200).send("Fake request sent");
+};
+
+module.exports = { sendEmail, fakeRequest };
